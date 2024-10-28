@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,14 +7,11 @@
     <meta name="description" content="inside_coffeeshop Web-project" />
     <meta name="keywords" content="HTML, CSS" />
     <title>Home Coffee</title>
-    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="index" href="./pages/index.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-
-    <!-- Fonte do Google Fonts -->
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -31,12 +28,9 @@
             alt="Logotipo do Home Coffee"
             class="nav__logo"
           />
-
           <ul class="nav__links">
             <li><a class="nav__link" href="#receitas">Receita</a></li>
-            <li>
-              <a class="nav__link" href="#reserva">Reservar uma Mesa</a>
-            </li>
+            <li><a class="nav__link" href="#reserva">Reservar uma Mesa</a></li>
             <li><a class="nav__link" href="#contatos">Contatos</a></li>
           </ul>
         </nav>
@@ -57,24 +51,27 @@
         />
       </header>
 
-      <footer class="card__footer">
-        <p>200 Success Avenue, cidade de Triple Peaks</p>
-        <p>Horários</p>
-        <p>Segunda a sexta (10:00 às 19:00)</p>
-        <p>Sábado e domingo (11:00 às 18:00)</p>
-      </footer>
-
       <main class="content">
-        <section id="recipes" class="receitas">
-          <div>
-            <h2 class="receitas">Receitas</h2>
-            <p class="receitas">
-              Confira algumas receitas que coletamos para seu lanchinho caseiro:
-            </p>
-          </div>
+        <section id="receitas" class="receitas">
+          <h2 class="receitas__title">Receitas</h2>
+          <p class="receitas__description">
+            Confira algumas receitas que coletamos para seu lanchinho caseiro:
+          </p>
+        </section>
+
+        <section class="card">
+          <div class="card__content"></div>
         </section>
       </main>
-      <footer class="footer"></footer>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <p>200 Success Avenue, cidade de Triple Peaks</p>
+          <p>Horários</p>
+          <p>Segunda a sexta (10:00 às 19:00)</p>
+          <p>Sábado e domingo (11:00 às 18:00)</p>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
