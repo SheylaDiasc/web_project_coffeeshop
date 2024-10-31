@@ -2,75 +2,124 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Sheyla Dias" />
-    <meta name="description" content="inside_coffeeshop Web-project" />
+    <meta name="description" content="Web Projects" />
     <meta name="keywords" content="HTML, CSS" />
-    <title>Home Coffee</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="reset.css" />
+    <meta name="author" content="Sheyla Dias Coimbra da Cunha" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biblioteca Triple Peaks</title>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com/" />
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
+
   <body>
     <div class="page">
       <header class="header">
         <nav class="nav">
           <img
             src="./images/logo_coffeeshop_dark.svg"
-            alt="Logotipo do Home Coffee"
+            alt="Logotipo da Biblioteca Triple Peaks"
             class="nav__logo"
           />
+
           <ul class="nav__links">
-            <li><a class="nav__link" href="#receitas">Receita</a></li>
-            <li><a class="nav__link" href="#reserva">Reservar uma Mesa</a></li>
-            <li><a class="nav__link" href="#contatos">Contatos</a></li>
+            <li>
+              <a class="nav__link" href="#recipes">Receitas</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#reservation">Reservar uma mesa</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#footer">Contatos</a>
+            </li>
           </ul>
         </nav>
 
-        <div class="header__content">
-          <h1 class="header__title">Home Coffee</h1>
-          <h2 class="header__subtitle">na biblioteca Triple Peaks</h2>
-          <p class="header__description">
-            Esta é nossa zona de estudos! Temos aquele cafezinho para energizar
-            você e vibrações aconchegantes para soltar a criatividade.
-          </p>
-        </div>
+        <h1 class="header__title">
+          <span class="header__span-accent">Café especial</span>
+          na biblioteca Triple Peaks
+        </h1>
+        <p class="header__description">
+          Esta é nossa zona de estudo! Temos aquele cafezinho para energizar
+          você e vibrações aconchegantes para soltar a criatividade.
+        </p>
 
         <img
           src="./images/inside_coffee_shop.png"
-          alt="Ilustração da biblioteca"
+          alt="Ilustração 'Dentro da biblioteca'"
           class="header__image"
         />
+
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraph">Horários:</p>
+            <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
+            <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, a cidade de Triple Peaks
+          </p>
+        </div>
       </header>
 
       <main class="content">
-        <section id="receitas" class="receitas">
-          <h2 class="receitas__title">Receitas</h2>
-          <p class="receitas__description">
-            Confira algumas receitas que coletamos para seu lanchinho caseiro:
+        <section class="recipes" id="recipes">
+          <h2 class="recipes__title">Receitas</h2>
+          <p class="recipes__subtitle">
+            Confira algumas receitas que coletamos para <br />
+            seu lanchinho caseiro:
           </p>
+
+          <div class="recipes__videos">
+            <div class="recipes__videos-container">
+              <iframe
+                class="recipes__iframe"
+                width="480"
+                height="273"
+                src="https://www.youtube.com/embed/j6VlT_jUVPc"
+                title="The Ultimate AeroPress Technique (Episode #3)"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h3 class="recipes__videos-title">
+                Receita Aeropress
+                <span class="recipes__videos-caption">~5min</span>
+              </h3>
+            </div>
+
+            <div class="recipes__videos-container">
+              <iframe
+                class="recipes__iframe"
+                width="480"
+                height="273"
+                src="https://www.youtube.com/embed/st571DYYTR8"
+                title="The Ultimate French Press Technique"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <h3 class="recipes__videos-title">
+                Receita de Prensa Francesa
+                <span class="recipes__videos-caption">~15min</span>
+              </h3>
+            </div>
+          </div>
         </section>
 
-        <section class="card">
-          <div class="card__content"></div>
-        </section>
+        <section class="reservation" id="reservation"></section>
       </main>
 
-      <footer class="footer">
-        <div class="footer__content">
-          <p>200 Success Avenue, cidade de Triple Peaks</p>
-          <p>Horários</p>
-          <p>Segunda a sexta (10:00 às 19:00)</p>
-          <p>Sábado e domingo (11:00 às 18:00)</p>
-        </div>
+      <footer class="footer" id="footer">
+        <section class="footer__contact" id="contact-info">
+          <!-- Conteúdo do contato -->
+        </section>
       </footer>
     </div>
   </body>
