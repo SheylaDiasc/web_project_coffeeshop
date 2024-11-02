@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content="Web Projects" />
-    <meta name="keywords" content="HTML, CSS" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="author" content="Sheyla Dias Coimbra da Cunha" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biblioteca Triple Peaks</title>
@@ -27,7 +27,6 @@
             alt="Logotipo da Biblioteca Triple Peaks"
             class="nav__logo"
           />
-
           <ul class="nav__links">
             <li>
               <a class="nav__link" href="#recipes">Receitas</a>
@@ -62,7 +61,7 @@
             <p class="header__paragraph">Segunda a sexta (10:00 – 19:00)</p>
             <p class="header__paragraph">Sábado a domingo (11:00 - 18:00)</p>
           </div>
-          <p class="header__paragraph">
+          <p class="header__paragraph header__address">
             200 Success Avenue, a cidade de Triple Peaks
           </p>
         </div>
@@ -76,7 +75,7 @@
             seu lanchinho caseiro:
           </p>
 
-          <div class="recipes__videos">
+          <div class="recipes__videos" id="#">
             <div class="recipes__videos-container">
               <iframe
                 class="recipes__iframe"
@@ -113,13 +112,101 @@
           </div>
         </section>
 
-        <section class="reservation" id="reservation"></section>
-      </main>
+        <section class="reservation" id="reservation">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
 
-      <footer class="footer" id="footer">
-        <section class="footer__contact" id="contact-info">
-          <!-- Conteúdo do contato -->
+          <form class="form reservation__form">
+            <fieldset class="reservation__form-style">
+              <label for="name" class="reservation__form-label"
+                >Nome *
+                <input
+                  type="text"
+                  class="reservation__form-input"
+                  id="name"
+                  placeholder="Nome"
+                />
+              </label>
+              <label for="number-of-guests" class="reservation__form-label">
+                Número de convidados *
+                <input
+                  type="number"
+                  class="reservation__form-input"
+                  id="number-of-guests"
+                  placeholder="1-8"
+                />
+              </label>
+              <label for="reservation-date" class="reservation__form-label">
+                Data & hora *
+                <input
+                  type="datetime-local"
+                  class="reservation__form-input"
+                  id="reservation-date"
+                />
+              </label>
+              <label for="reservation-email" class="reservation__form-label">
+                Seu e-mail *
+                <input
+                  type="email"
+                  class="reservation__form-input"
+                  id="reservation-email"
+                  placeholder="email@email.com"
+                />
+              </label>
+            </fieldset>
+            <button class="reservation__button" type="submit">
+              Reservar uma mesa
+            </button>
+            <div>
+              <label
+                for="reservation-table"
+                class="reservation__form-label reservation__option"
+              >
+                <input
+                  type="checkbox"
+                  class="reservation__form-input"
+                  id="reservation-table"
+                />
+                Concordo com os termos de uso
+              </label>
+            </div>
+          </form>
         </section>
+      </main>
+      <footer class="footer">
+        <section class="footer__content" id="footer">
+          <div>
+            <img
+              class="footer__logo"
+              src="./images/logo_coffeeshop_light.svg"
+              alt="Coffeshop logo"
+            />
+            <div class="footer__circle"></div>
+          </div>
+          <div class="footer__social">
+            <h2 class="footer__social-heading">Mídia social</h2>
+            <ul class="footer__social-list">
+              <li class="footer__social-list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Facebook icon"
+                  />Facebook</a
+                >
+              </li>
+              <li class="footer__social-list-item">
+                <a href="#" class="footer__social-link"
+                  ><img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Instagram icon"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="footer__copyright">©2024 Sheyla Dias Coimbra da Cunha</div>
       </footer>
     </div>
   </body>
