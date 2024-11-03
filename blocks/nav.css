@@ -1,5 +1,4 @@
 .nav {
-  /* Adicione as propriedades flex aqui */
   display: flex;
   justify-content: space-between;
 }
@@ -12,8 +11,6 @@
 }
 
 .nav__links {
-  /* Redefina o estilo de listas padrão aqui */
-
   display: flex;
   column-gap: 20px;
   list-style-type: none;
